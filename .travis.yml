@@ -3,3 +3,4 @@ language: objective-c
 script:
 - set -o pipefail && xcodebuild build -project extra_recipe.xcodeproj -xcconfig extra_recipe.xcconfig -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
 - ls
+- ls build/
