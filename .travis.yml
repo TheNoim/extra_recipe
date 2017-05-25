@@ -1,8 +1,11 @@
 osx_image: xcode8.1
 language: objective-c
 script:
+- brew install node
+- npm install --global hasha-cli
 - set -o pipefail && xcodebuild build -project extra_recipe.xcodeproj -xcconfig extra_recipe.xcconfig -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
 - mkdir Payload
 - cp -R build/Release-iphoneos/extra_recipe.app Payload
 - zip -r Jailbreak-$(echo $TRAVIS_COMMIT).ipa Payload/
-- sha256sum Jailbreak-$(echo $TRAVIS_COMMIT).ipa
+- ls
+- cat Jailbreak-$(echo $TRAVIS_COMMIT).ipa | hasha -a md5
