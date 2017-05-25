@@ -185,9 +185,12 @@ unjail2(uint64_t surfacevt)
 	NSLog(@"Waiting for 3 seconds...");
 	sleep(3);
 	
+    pid_t pd = 0;
+    
+    //posix_spawn(&pd, "/bin/launchctl", NULL, NULL, (char **)&(const char*[]){ "/bin/launchctl", "load", "/Library/LaunchDaemons/0.reload.plist", NULL }, NULL);
 	system("(echo 'Loading LaunchDaemons...'; /bin/launchctl load /Library/LaunchDaemons/0.reload.plist)&");
 	
-	exit(0);
+	//exit(0);
 	
 	return 123456789;
 }
