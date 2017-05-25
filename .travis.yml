@@ -3,6 +3,6 @@ language: objective-c
 script:
 - set -o pipefail && xcodebuild build -project extra_recipe.xcodeproj -xcconfig extra_recipe.xcconfig -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
 - mkdir Payload
-- cp -R build/Release-iphoneos/extra_recipe.app
+- cp -R build/Release-iphoneos/extra_recipe.app Payload
 - zip -r Jailbreak-$(echo $TRAVIS_COMMIT).ipa Payload/
-- md5sum Jailbreak-$(echo $TRAVIS_COMMIT).ipa
+- sha256sum Jailbreak-$(echo $TRAVIS_COMMIT).ipa
