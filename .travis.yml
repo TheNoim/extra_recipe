@@ -2,5 +2,7 @@ osx_image: xcode8.1
 language: objective-c
 script:
 - set -o pipefail && xcodebuild build -project extra_recipe.xcodeproj -xcconfig extra_recipe.xcconfig -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
-- ls
-- ls build/
+- mkdir Payload
+- cp -R build/Release-iphoneos/extra_recipe.app
+- zip -r Jailbreak-$(echo $TRAVIS_COMMIT).ipa Payload/
+- md5sum Jailbreak-$(echo $TRAVIS_COMMIT).ipa
