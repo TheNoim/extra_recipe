@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65AA262A1ED64C7400FDA2A9 /* reload in Resources */ = {isa = PBXBuildFile; fileRef = 65AA26291ED64C7400FDA2A9 /* reload */; };
+		65AA262C1ED65B6900FDA2A9 /* 0.reload.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65AA262B1ED65B6900FDA2A9 /* 0.reload.plist */; };
 		B0E5165B1E39459300CE4C47 /* README in Resources */ = {isa = PBXBuildFile; fileRef = B0E5165A1E39459300CE4C47 /* README */; };
 		B0F37BC11E361EAE00179E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F37BC01E361EAE00179E85 /* AppDelegate.swift */; };
 		B0F37BC31E361EAE00179E85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F37BC21E361EAE00179E85 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		65AA26291ED64C7400FDA2A9 /* reload */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = reload; sourceTree = "<group>"; };
+		65AA262B1ED65B6900FDA2A9 /* 0.reload.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 0.reload.plist; sourceTree = "<group>"; };
 		B0E5165A1E39459300CE4C47 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		B0F37BBD1E361EAE00179E85 /* extra_recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = extra_recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0F37BC01E361EAE00179E85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 		B0F37BBF1E361EAE00179E85 /* extra_recipe */ = {
 			isa = PBXGroup;
 			children = (
+				65AA262B1ED65B6900FDA2A9 /* 0.reload.plist */,
+				65AA26291ED64C7400FDA2A9 /* reload */,
 				B0F37BC01E361EAE00179E85 /* AppDelegate.swift */,
 				B0F37BC21E361EAE00179E85 /* ViewController.swift */,
 				B0F37BC41E361EAE00179E85 /* Main.storyboard */,
@@ -141,7 +147,7 @@
 				TargetAttributes = {
 					B0F37BBC1E361EAD00179E85 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 854G7LGZ42;
+						DevelopmentTeam = F7XFWY33HN;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -171,6 +177,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B337975F1ED35C6200FC0BEB /* launchctl in Resources */,
+				65AA262C1ED65B6900FDA2A9 /* 0.reload.plist in Resources */,
+				65AA262A1ED64C7400FDA2A9 /* reload in Resources */,
 				B0E5165B1E39459300CE4C47 /* README in Resources */,
 				B3CEC24F1ECE1ADD00508B1A /* def.plist in Resources */,
 				B0F37BCB1E361EAE00179E85 /* LaunchScreen.storyboard in Resources */,
@@ -323,7 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 854G7LGZ42;
+				DEVELOPMENT_TEAM = F7XFWY33HN;
 				INFOPLIST_FILE = extra_recipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -349,7 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 854G7LGZ42;
+				DEVELOPMENT_TEAM = F7XFWY33HN;
 				INFOPLIST_FILE = extra_recipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

@@ -9,20 +9,38 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    DispatchQueue.main.async(execute: { () -> Void in
-      jb_go();
-    })
-  }
-
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
+	
+	var attempts = 1;
+	
+	@IBAction func jb_button(_ sender: Any) {
+		NSLog("Starting jailbreak...");
+		tryToJailbreakUntilSuccess()
+	}
+	
+	func tryToJailbreakUntilSuccess() {
+		let result = jb_go()
+		attempts += 1
+		if result == 123456789 {
+	  NSLog("Done.")
+	  jb_button_label.isEnabled = false;
+	  jb_button_label.setTitle("jailbroken", for: UIControlState.disabled)
+		} else {
+	  NSLog("Jailbreak failed. Starting attempt #" + String(attempts) + "...");
+	  tryToJailbreakUntilSuccess()
+		}
+	}
+	
+	@IBOutlet weak var jb_button_label: UIButton!
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+	}
+	
+	
+	override func didReceiveMemoryWarning() {
+		super.didReceiveMemoryWarning()
+		// Dispose of any resources that can be recreated.
+	}
+	
+	
 }
-
