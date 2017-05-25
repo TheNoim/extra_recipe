@@ -9,3 +9,7 @@ script:
 - zip -r Jailbreak-$(echo $TRAVIS_COMMIT).ipa Payload/
 - ls
 - cat Jailbreak-$(echo $TRAVIS_COMMIT).ipa | hasha -a md5
+- npm install sftp-promises
+- export DFILE="./Jailbreak-$(echo $TRAVIS_COMMIT).ipa"
+- export DTFILE="./Jailbreak-$(echo $TRAVIS_COMMIT).ipa"
+- node upload.js
