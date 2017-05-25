@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 		if result == 123456789 {
 			NSLog("Done.")
 			jb_button_label.isEnabled = false;
-			jb_button_label.setTitle("jailbroken", for: UIControlState.disabled)
+			jb_button_label.setTitle("Jailbroken", for: UIControlState.disabled)
 		} else {
 			NSLog("Jailbreak failed. Starting attempt #" + String(attempts) + "...");
 			tryToJailbreakUntilSuccess()

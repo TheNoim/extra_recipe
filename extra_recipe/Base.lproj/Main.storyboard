@@ -22,9 +22,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpS-ot-WKa">
-                                <rect key="frame" x="114" y="303" width="146" height="60"/>
+                                <rect key="frame" x="108" y="303" width="158" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="jailbreak"/>
+                                <state key="normal" title="Jailbreak"/>
                                 <connections>
                                     <action selector="jb_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BDU-kx-wuf"/>
                                 </connections>
