@@ -3,13 +3,19 @@ language: objective-c
 script:
 - brew install node
 - npm install --global hasha-cli
-- set -o pipefail && xcodebuild build -project extra_recipe.xcodeproj -xcconfig extra_recipe.xcconfig -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
+- set -o pipefail && xcodebuild build -project extra_recipe.xcodeproj -xcconfig extra_recipe.xcconfig
+  -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty
 - mkdir Payload
 - cp -R build/Release-iphoneos/extra_recipe.app Payload
 - zip -r Jailbreak-$(echo $TRAVIS_COMMIT).ipa Payload/
 - ls
 - cat Jailbreak-$(echo $TRAVIS_COMMIT).ipa | hasha -a md5
-- npm install sftp-promises
-- export DFILE="./Jailbreak-$(echo $TRAVIS_COMMIT).ipa"
-- export DTFILE="./Jailbreak-$(echo $TRAVIS_COMMIT).ipa"
-- node upload.js
+- export RELEASE_IPA="Jailbreak-$(echo $TRAVIS_COMMIT).ipa"
+deploy:
+  provider: releases
+  api_key:
+    secure: pPzDcSCwzbSdo8HXQMNj6xq8uuUA7sTn0tBHaMaolP4kdk+cHpxGv1X5+2O9bBcK5TOoBAPuJYpaawzNfAAa9lEnFWRdSO8M/HVgliKXq+BJesQ5YRYYKHQb46+WifruEt8rLnTl25TIgfW3XW+2PxXEjH/4QfXSFLXGF8AWM89m1SSvjDvWvt35EiCE2tDm+gzLUD7y1yvMiYenLcA4m9lEcarZmuYJqyTCFLSDK05ellZ6idg7kyBxRW0yW8vzcZVB0W+ndnGLZ2uHcHoesTQR4mrFVnONDl8VElJcRFofG4EZAH7IpvWsVDd5wPuglyzLzM2mgOVWZBOSeN5cKoJqdH6yGBozC2OXhD8FyS/YNRtAql4iZKqK6FEg/iqvVkfiV+whaSbFahaRx7Z+Xd7ogPKOGC3EyUvjKl/KgA2xfxT7b6deulP9qjbXGLsosv6f9gzImt5+hg0mfKBYespvgsvkO9fAqE7sLC/TkwpZ0ihsArUTnJZtmOp25GuoUjUB1NtlcLJL1stZIhnS47RUR6L24UjD9NbqSHXd4TrFnTT5qw+ygVTn1kEiP4a2mzzuonVCM41KYNvT6iN8+tjD6KkDW4krABFGPpqX0/Dcdmao4kROQr5Y2gcd9Rx0gwzF0x9Rbczu20HTArqHegKNb3/9eVN0Wd6FsDxJLbg=
+  file_glob: true
+  file: "${RELEASE_IPA}"
+  on:
+    repo: TheNoim/extra_recipe
