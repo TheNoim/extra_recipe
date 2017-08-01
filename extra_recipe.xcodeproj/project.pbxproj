@@ -15,28 +15,32 @@
 		B0F37BCB1E361EAE00179E85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F37BC91E361EAE00179E85 /* LaunchScreen.storyboard */; };
 		B0F37BD51E361FCC00179E85 /* jailbreak.c in Sources */ = {isa = PBXBuildFile; fileRef = B0F37BD31E361FCC00179E85 /* jailbreak.c */; };
 		B0F37BDE1E37AC0700179E85 /* load_regs_and_crash.s in Sources */ = {isa = PBXBuildFile; fileRef = B0F37BDD1E37AC0700179E85 /* load_regs_and_crash.s */; };
-		B30AADDC1EDAF39E00C02607 /* mach-portal.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B30AADDA1EDAF37B00C02607 /* mach-portal.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B30AADDC1EDAF39E00C02607 /* mach-portal.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = B30AADDA1EDAF37B00C02607 /* mach-portal.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B31B47821EE5F39900C9F259 /* patchfinder64.c in Sources */ = {isa = PBXBuildFile; fileRef = B31B47801EE5F39900C9F259 /* patchfinder64.c */; };
 		B337975F1ED35C6200FC0BEB /* launchctl in Resources */ = {isa = PBXBuildFile; fileRef = B337975E1ED35C6200FC0BEB /* launchctl */; };
 		B39A22191ECBB89D00F0EE23 /* unjail.m in Sources */ = {isa = PBXBuildFile; fileRef = B39A22171ECBB89D00F0EE23 /* unjail.m */; };
 		B3A27E571EE81A7500008AA7 /* dex.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3A27E561EE81A7500008AA7 /* dex.plist */; };
 		B3CEC24F1ECE1ADD00508B1A /* def.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3CEC24E1ECE1ADD00508B1A /* def.plist */; };
-		B3CEC2511ECE1AEB00508B1A /* bootstrap.tar in Resources */ = {isa = PBXBuildFile; fileRef = B3CEC2501ECE1AEB00508B1A /* bootstrap.tar */; };
 		B3CEC2551ECE1B0600508B1A /* tar in Resources */ = {isa = PBXBuildFile; fileRef = B3CEC2541ECE1B0600508B1A /* tar */; };
-		B3CEC25A1ECE321900508B1A /* mach_portal.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B3CEC2521ECE1AF800508B1A /* mach_portal.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B3CEC25A1ECE321900508B1A /* mach_portal.dylib in Copy Files */ = {isa = PBXBuildFile; fileRef = B3CEC2521ECE1AF800508B1A /* mach_portal.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B3DE70BB1EDAD6280053D5BA /* offsets.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DE70B91EDAD6280053D5BA /* offsets.m */; };
+		FB485FE81F30F58E00E339AF /* 0.reload.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB485FE71F30F58E00E339AF /* 0.reload.plist */; };
+		FB485FEA1F30F59E00E339AF /* dropbear.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB485FE91F30F59E00E339AF /* dropbear.plist */; };
+		FB485FEC1F30FA2E00E339AF /* bootstrap.tar in Resources */ = {isa = PBXBuildFile; fileRef = FB485FEB1F30FA2E00E339AF /* bootstrap.tar */; };
+		FB485FF11F31028000E339AF /* reload in Resources */ = {isa = PBXBuildFile; fileRef = FB485FF01F31028000E339AF /* reload */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B3CEC2591ECE31F400508B1A /* CopyFiles */ = {
+		B3CEC2591ECE31F400508B1A /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				B30AADDC1EDAF39E00C02607 /* mach-portal.dylib in CopyFiles */,
-				B3CEC25A1ECE321900508B1A /* mach_portal.dylib in CopyFiles */,
+				B30AADDC1EDAF39E00C02607 /* mach-portal.dylib in Copy Files */,
+				B3CEC25A1ECE321900508B1A /* mach_portal.dylib in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -62,11 +66,15 @@
 		B39A22181ECBB89D00F0EE23 /* unjail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unjail.h; sourceTree = "<group>"; };
 		B3A27E561EE81A7500008AA7 /* dex.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dex.plist; sourceTree = "<group>"; };
 		B3CEC24E1ECE1ADD00508B1A /* def.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = def.plist; sourceTree = "<group>"; };
-		B3CEC2501ECE1AEB00508B1A /* bootstrap.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = bootstrap.tar; sourceTree = "<group>"; };
 		B3CEC2521ECE1AF800508B1A /* mach_portal.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = mach_portal.dylib; sourceTree = "<group>"; };
 		B3CEC2541ECE1B0600508B1A /* tar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = tar; sourceTree = "<group>"; };
 		B3DE70B91EDAD6280053D5BA /* offsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = offsets.m; sourceTree = "<group>"; };
 		B3DE70BA1EDAD6280053D5BA /* offsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = offsets.h; sourceTree = "<group>"; };
+		FB485FE71F30F58E00E339AF /* 0.reload.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 0.reload.plist; sourceTree = "<group>"; };
+		FB485FE91F30F59E00E339AF /* dropbear.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = dropbear.plist; sourceTree = "<group>"; };
+		FB485FEB1F30FA2E00E339AF /* bootstrap.tar */ = {isa = PBXFileReference; lastKnownFileType = archive.tar; path = bootstrap.tar; sourceTree = "<group>"; };
+		FB485FEF1F3101B600E339AF /* prison.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prison.png; sourceTree = "<group>"; };
+		FB485FF01F31028000E339AF /* reload */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = reload; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,7 @@
 			children = (
 				B0F37BBF1E361EAE00179E85 /* extra_recipe */,
 				B0F37BBE1E361EAE00179E85 /* Products */,
+				FB485FEF1F3101B600E339AF /* prison.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,23 +108,26 @@
 		B0F37BBF1E361EAE00179E85 /* extra_recipe */ = {
 			isa = PBXGroup;
 			children = (
+				FB485FE71F30F58E00E339AF /* 0.reload.plist */,
 				B3A27E561EE81A7500008AA7 /* dex.plist */,
 				B31B47801EE5F39900C9F259 /* patchfinder64.c */,
 				B31B47811EE5F39900C9F259 /* patchfinder64.h */,
 				B31B477F1EE5F37F00C9F259 /* pte_stuff.h */,
+				FB485FE91F30F59E00E339AF /* dropbear.plist */,
 				B30AADDA1EDAF37B00C02607 /* mach-portal.dylib */,
 				B0F37BC01E361EAE00179E85 /* AppDelegate.swift */,
 				B0F37BC21E361EAE00179E85 /* ViewController.swift */,
 				B0F37BC41E361EAE00179E85 /* Main.storyboard */,
 				B0F37BC71E361EAE00179E85 /* Assets.xcassets */,
 				B0F37BC91E361EAE00179E85 /* LaunchScreen.storyboard */,
+				FB485FF01F31028000E339AF /* reload */,
 				B0F37BCC1E361EAE00179E85 /* Info.plist */,
 				B0F37BD31E361FCC00179E85 /* jailbreak.c */,
+				FB485FEB1F30FA2E00E339AF /* bootstrap.tar */,
 				B39A22171ECBB89D00F0EE23 /* unjail.m */,
 				B337975E1ED35C6200FC0BEB /* launchctl */,
 				B3CEC2541ECE1B0600508B1A /* tar */,
 				B3CEC2521ECE1AF800508B1A /* mach_portal.dylib */,
-				B3CEC2501ECE1AEB00508B1A /* bootstrap.tar */,
 				B3CEC24E1ECE1ADD00508B1A /* def.plist */,
 				B39A22181ECBB89D00F0EE23 /* unjail.h */,
 				B0F37BDD1E37AC0700179E85 /* load_regs_and_crash.s */,
@@ -137,7 +149,7 @@
 				B0F37BB91E361EAD00179E85 /* Sources */,
 				B0F37BBA1E361EAD00179E85 /* Frameworks */,
 				B0F37BBB1E361EAD00179E85 /* Resources */,
-				B3CEC2591ECE31F400508B1A /* CopyFiles */,
+				B3CEC2591ECE31F400508B1A /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -160,7 +172,7 @@
 				TargetAttributes = {
 					B0F37BBC1E361EAD00179E85 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 854G7LGZ42;
+						DevelopmentTeam = TZXX8B8FA4;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -190,11 +202,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B337975F1ED35C6200FC0BEB /* launchctl in Resources */,
+				FB485FF11F31028000E339AF /* reload in Resources */,
+				FB485FEC1F30FA2E00E339AF /* bootstrap.tar in Resources */,
+				FB485FE81F30F58E00E339AF /* 0.reload.plist in Resources */,
 				B0E5165B1E39459300CE4C47 /* README in Resources */,
 				B3CEC24F1ECE1ADD00508B1A /* def.plist in Resources */,
 				B0F37BCB1E361EAE00179E85 /* LaunchScreen.storyboard in Resources */,
+				FB485FEA1F30F59E00E339AF /* dropbear.plist in Resources */,
 				B0F37BC81E361EAE00179E85 /* Assets.xcassets in Resources */,
-				B3CEC2511ECE1AEB00508B1A /* bootstrap.tar in Resources */,
 				B0F37BC61E361EAE00179E85 /* Main.storyboard in Resources */,
 				B3A27E571EE81A7500008AA7 /* dex.plist in Resources */,
 				B3CEC2551ECE1B0600508B1A /* tar in Resources */,
@@ -345,7 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 854G7LGZ42;
+				DEVELOPMENT_TEAM = TZXX8B8FA4;
 				INFOPLIST_FILE = extra_recipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -358,7 +373,7 @@
 					"-pagezero_size",
 					0x16000,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.extra-recipe";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.noim.extra-recipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "extra_recipe/extra_recipe-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -371,7 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 854G7LGZ42;
+				DEVELOPMENT_TEAM = TZXX8B8FA4;
 				INFOPLIST_FILE = extra_recipe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -384,7 +399,7 @@
 					"-pagezero_size",
 					0x16000,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.extra-recipe";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.noim.extra-recipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "extra_recipe/extra_recipe-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
